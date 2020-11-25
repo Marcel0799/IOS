@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HaloWelt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-4a-Bhb">
+                                <rect key="frame" x="42" y="273" width="330" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diese Anwendung ist nutzlos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYb-AQ-r4o">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="CeP-Ck-McP"/>
+                                            <constraint firstAttribute="height" constant="40" id="mr6-3J-7ci"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUU-4u-Tpd">
+                                        <rect key="frame" x="65" y="70" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ExG-at-zBE"/>
+                                            <constraint firstAttribute="height" constant="100" id="L0j-Fv-SNE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="60"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEV-0W-CUu">
+                                        <rect key="frame" x="105" y="200" width="120" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="d5d-jS-022"/>
+                                            <constraint firstAttribute="height" constant="60" id="e6l-kW-zyf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="37"/>
+                                        <state key="normal" title="Lower">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0F-aV-bOx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-0f-JBs">
+                                        <rect key="frame" x="105" y="290" width="120" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="uRh-9U-EWX"/>
+                                            <constraint firstAttribute="width" constant="120" id="vRr-tH-z8v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                        <state key="normal" title="Higher">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENH-aW-OPz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VhR-4a-Bhb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iIB-N1-LDe"/>
+                            <constraint firstItem="VhR-4a-Bhb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wz8-Ii-G7k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="higherOutler" destination="Fsy-0f-JBs" id="2uo-sI-oJe"/>
+                        <outlet property="label" destination="OUU-4u-Tpd" id="ROZ-9I-NOa"/>
+                        <outlet property="lowerOutlet" destination="JEV-0W-CUu" id="OAm-bk-4sg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7499" y="-188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
